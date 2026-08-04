@@ -38,24 +38,32 @@ export function HeroVideo() {
   }, []);
 
   return (
-    <video
-      ref={videoRef}
-      autoPlay
-      muted
-      loop
-      playsInline
-      preload="auto"
-      poster="/media/metamorphosis-poster.jpg"
-      aria-hidden="true"
-      tabIndex={-1}
-      disablePictureInPicture
-    >
-      <source
-        media="(max-width: 680px)"
-        src="/media/metamorphosis-mobile-v2.m4v"
-        type="video/x-m4v"
+    <>
+      <img
+        className="hero-mobile-animation"
+        src="/media/metamorphosis-mobile-v3.webp"
+        alt=""
+        aria-hidden="true"
+        draggable="false"
       />
-      <source src="/media/metamorphosis.mp4" type="video/mp4" />
-    </video>
+      <video
+        ref={videoRef}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        poster="/media/metamorphosis-poster.jpg"
+        aria-hidden="true"
+        tabIndex={-1}
+        disablePictureInPicture
+      >
+        <source
+          media="(min-width: 681px)"
+          src="/media/metamorphosis.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </>
   );
 }
