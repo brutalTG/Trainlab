@@ -41,7 +41,7 @@ export function HeroVideo() {
     <>
       <img
         className="hero-mobile-animation"
-        src="/media/metamorphosis-mobile-v3.webp"
+        src="/media/metamorphosis-mobile-hq-v4.webp"
         alt=""
         aria-hidden="true"
         draggable="false"
