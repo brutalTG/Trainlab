@@ -243,6 +243,15 @@ a {
     linear-gradient(90deg, rgba(0, 0, 0, 0.38), transparent 50%, rgba(0, 0, 0, 0.2));
 }
 
+.hero-media video {
+  opacity: 1;
+  filter: none;
+}
+
+.hero-media .media-shade {
+  background: transparent;
+}
+
 .hero-content {
   position: relative;
   z-index: 2;

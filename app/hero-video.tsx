@@ -40,7 +40,6 @@ export function HeroVideo() {
   return (
     <video
       ref={videoRef}
-      src="/media/metamorphosis.mp4"
       autoPlay
       muted
       loop
@@ -50,6 +49,13 @@ export function HeroVideo() {
       aria-hidden="true"
       tabIndex={-1}
       disablePictureInPicture
-    />
+    >
+      <source
+        media="(max-width: 680px)"
+        src="/media/metamorphosis-mobile-v2.m4v"
+        type="video/x-m4v"
+      />
+      <source src="/media/metamorphosis.mp4" type="video/mp4" />
+    </video>
   );
 }
