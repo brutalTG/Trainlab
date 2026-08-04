@@ -47,7 +47,7 @@ export function ContactForm() {
         <textarea name="mensaje" rows={4} required />
       </label>
       <button className="submit-button" type="submit">
-        Enviar consulta <span aria-hidden="true">↗</span>
+        Enviar consulta
       </button>
     </form>
   );

@@ -1,4 +1,5 @@
 import { ContactForm } from "./contact-form";
+import { HeroVideo } from "./hero-video";
 
 const capabilities = [
   {
@@ -117,18 +118,7 @@ export default function Home() {
             className="hero-media media-frame"
             style={{ backgroundImage: "url('/media/metamorphosis-poster.jpg')" }}
           >
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="metadata"
-              poster="/media/metamorphosis-poster.jpg"
-              aria-hidden="true"
-              tabIndex={-1}
-            >
-              <source src="/media/metamorphosis.mp4" type="video/mp4" />
-            </video>
+            <HeroVideo />
             <div className="media-shade" />
           </div>
 
@@ -144,7 +134,7 @@ export default function Home() {
               para competir en entornos de transformación acelerada.
             </p>
             <a className="pill pill-light" href="#que-es">
-              Conocé TrainLab <span aria-hidden="true">↓</span>
+              Conocé TrainLab
             </a>
           </div>
 
