@@ -336,32 +336,36 @@ export default function Home() {
           </div>
           <div className="council-grid">
             <article>
-              <div className="portrait-frame portrait-federico">
-                <img src="/media/federico-pinedo.jpeg" alt="Federico Pinedo" width="160" height="160" />
+              <div className="council-person-header">
+                <div className="portrait-frame portrait-federico">
+                  <img src="/media/federico-pinedo.jpeg" alt="Federico Pinedo" width="160" height="160" />
+                </div>
+                <div className="council-person-heading">
+                  <h3>Federico Pinedo</h3>
+                  <p className="council-role">Consejo Asesor</p>
+                </div>
               </div>
-              <div className="council-person-copy">
-                <p className="council-role">Consejo Asesor</p>
-                <h3>Federico Pinedo</h3>
-                <p>
-                  Abogado especializado en telecomunicaciones, políticas
-                  públicas y competencia. Profesor de posgrado, exlegislador y
-                  sherpa argentino ante el G20.
-                </p>
-              </div>
+              <p className="council-bio">
+                Abogado especializado en telecomunicaciones, políticas
+                públicas y competencia. Profesor de posgrado, exlegislador y
+                sherpa argentino ante el G20.
+              </p>
             </article>
             <article>
-              <div className="portrait-frame portrait-alejandro">
-                <img src="/media/alejandro-marchionna.jpeg" alt="Alejandro Marchionna Faré" width="160" height="160" />
+              <div className="council-person-header">
+                <div className="portrait-frame portrait-alejandro">
+                  <img src="/media/alejandro-marchionna.jpeg" alt="Alejandro Marchionna Faré" width="160" height="160" />
+                </div>
+                <div className="council-person-heading">
+                  <h3>Alejandro Marchionna Faré</h3>
+                  <p className="council-role">Consejo Académico</p>
+                </div>
               </div>
-              <div className="council-person-copy">
-                <p className="council-role">Consejo Académico</p>
-                <h3>Alejandro Marchionna Faré</h3>
-                <p>
-                  Consultor en estrategia y gobierno corporativo, director de
-                  empresas y profesor de posgrado. Director Académico del IGEP,
-                  MBA por Harvard y Doctor en Dirección de Empresas.
-                </p>
-              </div>
+              <p className="council-bio">
+                Consultor en estrategia y gobierno corporativo, director de
+                empresas y profesor de posgrado. Director Académico del IGEP,
+                MBA por Harvard y Doctor en Dirección de Empresas.
+              </p>
             </article>
           </div>
         </section>
