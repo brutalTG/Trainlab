@@ -97,20 +97,11 @@ export default function Home() {
           TrainLab
         </a>
 
-        <nav className="desktop-nav" aria-label="Navegación principal">
-          {desktopNav.map(([label, href]) => (
-            <a key={href} href={href}>
-              {label}
-            </a>
-          ))}
-        </nav>
-
-        <details className="mobile-menu">
+        <details className="site-menu">
           <summary aria-label="Abrir navegación">
-            <span>Menú</span>
             <i aria-hidden="true" />
           </summary>
-          <nav aria-label="Navegación móvil">
+          <nav aria-label="Navegación principal">
             {desktopNav.map(([label, href]) => (
               <a key={href} href={href}>
                 {label}
@@ -345,22 +336,32 @@ export default function Home() {
           </div>
           <div className="council-grid">
             <article>
-              <p className="council-role">Consejo Asesor</p>
-              <h3>Federico Pinedo</h3>
-              <p>
-                Abogado especializado en telecomunicaciones, políticas
-                públicas y competencia. Profesor de posgrado, exlegislador y
-                sherpa argentino ante el G20.
-              </p>
+              <div className="portrait-frame portrait-federico">
+                <img src="/media/federico-pinedo.jpeg" alt="Federico Pinedo" width="160" height="160" />
+              </div>
+              <div className="council-person-copy">
+                <p className="council-role">Consejo Asesor</p>
+                <h3>Federico Pinedo</h3>
+                <p>
+                  Abogado especializado en telecomunicaciones, políticas
+                  públicas y competencia. Profesor de posgrado, exlegislador y
+                  sherpa argentino ante el G20.
+                </p>
+              </div>
             </article>
             <article>
-              <p className="council-role">Consejo Académico</p>
-              <h3>Alejandro Marchionna Faré</h3>
-              <p>
-                Consultor en estrategia y gobierno corporativo, director de
-                empresas y profesor de posgrado. Director Académico del IGEP,
-                MBA por Harvard y Doctor en Dirección de Empresas.
-              </p>
+              <div className="portrait-frame portrait-alejandro">
+                <img src="/media/alejandro-marchionna.jpeg" alt="Alejandro Marchionna Faré" width="160" height="160" />
+              </div>
+              <div className="council-person-copy">
+                <p className="council-role">Consejo Académico</p>
+                <h3>Alejandro Marchionna Faré</h3>
+                <p>
+                  Consultor en estrategia y gobierno corporativo, director de
+                  empresas y profesor de posgrado. Director Académico del IGEP,
+                  MBA por Harvard y Doctor en Dirección de Empresas.
+                </p>
+              </div>
             </article>
           </div>
         </section>
