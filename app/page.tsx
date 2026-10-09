@@ -132,7 +132,7 @@ export default function Home() {
           <div className="hero-content section-shell">
             <p className="eyebrow">Laboratorio de capacidades</p>
             <h1 id="hero-title">
-              La IA cambió el mundo.
+              El mundo cambió.
               <br />
               Tu equipo, <strong>¿está listo?</strong>
             </h1>
