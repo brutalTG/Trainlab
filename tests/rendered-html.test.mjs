@@ -34,6 +34,9 @@ test("server-renders the TrainLab one page", async () => {
   assert.match(html, /La IA cambió el mundo/);
   assert.match(html, /No vendemos cursos/);
   assert.match(html, /Federico Pinedo/);
+  assert.match(html, /Jimena García Pinto/);
+  assert.match(html, /a medida en/);
+  assert.match(html, /48 horas/);
   assert.match(html, /metamorphosis\.mp4/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/i);
 });

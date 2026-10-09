@@ -487,7 +487,7 @@ h2 strong {
 
 .methodology-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   margin: clamp(4rem, 8vw, 8rem) 0 0;
   padding: 0;
   border-top: 1px solid var(--line-dark);
@@ -495,7 +495,7 @@ h2 strong {
 }
 
 .methodology-list li {
-  min-height: 21rem;
+  min-height: 24rem;
   padding: 1.5rem;
   border-right: 1px solid var(--line-dark);
 }
@@ -565,9 +565,17 @@ h2 strong {
   margin-top: clamp(4rem, 7vw, 7rem);
 }
 
+.difference-lede {
+  grid-column: 2;
+  max-width: 34rem;
+  margin: 1.75rem 0 0;
+  color: #c2c2be;
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+}
+
 .difference-points {
   grid-column: 2;
-  margin-top: clamp(3rem, 6vw, 6rem);
+  margin-top: clamp(2.5rem, 5vw, 5rem);
 }
 
 .difference-points article {
@@ -671,7 +679,7 @@ h2 strong {
 
 .council-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1px;
   margin-top: clamp(4rem, 7vw, 7rem);
   border-top: 1px solid var(--line-light);
@@ -689,6 +697,10 @@ h2 strong {
 
 .council-grid article:first-child {
   padding-left: 0;
+}
+
+.council-grid article:last-child {
+  padding-right: 0;
 }
 
 .council-person-header {
@@ -744,6 +756,10 @@ h2 strong {
 
 .portrait-alejandro img {
   object-position: 50% 29%;
+}
+
+.portrait-jimena img {
+  object-position: 50% 42%;
 }
 
 .council-bio {
@@ -994,6 +1010,15 @@ h2 strong {
     border-right: 0;
   }
 
+  .methodology-list li:nth-child(4) {
+    border-right: 0;
+  }
+
+  .methodology-list li:last-child {
+    grid-column: 1 / -1;
+    min-height: 14rem;
+  }
+
   .difference-copy {
     grid-template-columns: 0.7fr 1.3fr;
   }
@@ -1005,6 +1030,22 @@ h2 strong {
 
   .contact-layout {
     grid-template-columns: 1fr;
+  }
+
+  .council-grid {
+    grid-template-columns: 1fr;
+    background: transparent;
+  }
+
+  .council-grid article,
+  .council-grid article:first-child,
+  .council-grid article:last-child {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .council-grid article + article {
+    border-top: 1px solid var(--line-light);
   }
 }
 
@@ -1111,6 +1152,10 @@ h2 strong {
     border-right: 0;
   }
 
+  .methodology-list li:last-child {
+    grid-column: auto;
+  }
+
   .step-index {
     grid-row: 1 / 3;
     margin: 0;
@@ -1137,6 +1182,10 @@ h2 strong {
 
   .difference-copy h2 {
     margin-top: 4rem;
+  }
+
+  .difference-lede {
+    margin-top: 1.5rem;
   }
 
   .difference-points {

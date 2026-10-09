@@ -39,23 +39,28 @@ const capabilities = [
 const methodology = [
   {
     index: "01",
-    title: "Detección de necesidades",
-    text: "Escuchamos el desafío, el contexto y los resultados que la organización necesita alcanzar.",
+    title: "Diagnóstico",
+    text: "Entendemos el problema real: quién necesita capacitarse, para qué y con qué urgencia.",
   },
   {
     index: "02",
-    title: "Propuesta estratégica",
-    text: "Definimos objetivos, contenidos, modalidad y criterios de evaluación.",
+    title: "Diseño a medida",
+    text: "Convertimos ese diagnóstico en un programa concreto — módulos, formato, facilitadores — en 48 horas, no en semanas.",
   },
   {
     index: "03",
-    title: "Ejecución técnica",
-    text: "Implementamos la experiencia con especialistas seleccionados para cada desafío.",
+    title: "Facilitación en vivo",
+    text: "Sesiones con expertos reales en IA aplicada y habilidades blandas.",
   },
   {
     index: "04",
-    title: "Evaluación de impacto",
-    text: "Medimos resultados, identificamos aprendizajes y definimos los próximos pasos.",
+    title: "Refuerzo entre sesiones",
+    text: "Cada programa incluye contenido de práctica y seguimiento en plataforma, para que lo aprendido no se pierda entre clase y clase.",
+  },
+  {
+    index: "05",
+    title: "Medición de impacto",
+    text: "Reportamos avance, participación y resultados al cliente — no solo asistencia.",
   },
 ];
 
@@ -80,9 +85,11 @@ const modalities = [
 
 const desktopNav = [
   ["Qué hacemos", "#que-hacemos"],
+  ["Qué es TrainLab", "#que-es"],
   ["Cómo trabajamos", "#metodologia"],
-  ["Modalidades", "#modalidades"],
   ["Consejo", "#consejo"],
+  ["Por qué TrainLab", "#por-que"],
+  ["Modalidades", "#modalidades"],
   ["Contacto", "#contacto"],
 ];
 
@@ -143,39 +150,11 @@ export default function Home() {
           </p>
         </section>
 
-        <section className="intro section-shell" id="que-es" aria-labelledby="intro-title">
-          <div className="section-meta">
-            <p className="eyebrow">Qué es TrainLab</p>
-            <p className="section-number">02</p>
-          </div>
-          <div className="intro-copy">
-            <h2 id="intro-title">
-              Comprender para
-              <br />
-              poder <strong>operar.</strong>
-            </h2>
-            <div className="intro-body">
-              <p>
-                La disrupción tecnológica está transformando nuestra forma de
-                trabajar, decidir y relacionarnos. Las herramientas cambian,
-                pero son las personas y los equipos quienes deben aprender a
-                utilizarlas.
-              </p>
-              <p>
-                TrainLab diseña soluciones de formación, capacitación y
-                entrenamiento para organizaciones, equipos y personas. Cada
-                propuesta parte de tu sector, tu cultura y tu momento: se
-                adapta a tu realidad, no al revés.
-              </p>
-            </div>
-          </div>
-        </section>
-
         <section className="capabilities" id="que-hacemos" aria-labelledby="capabilities-title">
           <div className="section-shell capabilities-heading">
             <div className="section-meta section-meta-dark">
               <p className="eyebrow">Qué hacemos</p>
-              <p className="section-number">03</p>
+              <p className="section-number">02</p>
             </div>
             <h2 id="capabilities-title">
               No vendemos cursos.
@@ -183,8 +162,7 @@ export default function Home() {
               Desarrollamos <strong>capacidades.</strong>
             </h2>
             <p className="capabilities-lede">
-              Programas estándar o a medida que integran conocimientos
-              técnicos, nuevas tecnologías y habilidades humanas.
+              Diseñamos programas a medida y los ponemos en marcha rápido.
             </p>
           </div>
 
@@ -221,6 +199,34 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="intro section-shell" id="que-es" aria-labelledby="intro-title">
+          <div className="section-meta">
+            <p className="eyebrow">Qué es TrainLab</p>
+            <p className="section-number">03</p>
+          </div>
+          <div className="intro-copy">
+            <h2 id="intro-title">
+              Comprender para
+              <br />
+              poder <strong>operar.</strong>
+            </h2>
+            <div className="intro-body">
+              <p>
+                La disrupción tecnológica está transformando nuestra forma de
+                trabajar, decidir y relacionarnos. Las herramientas cambian,
+                pero son las personas y los equipos quienes deben aprender a
+                utilizarlas.
+              </p>
+              <p>
+                TrainLab diseña soluciones de formación, capacitación y
+                entrenamiento para organizaciones, equipos y personas. Cada
+                propuesta parte de tu sector, tu cultura y tu momento: se
+                adapta a tu realidad, no al revés.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section className="methodology section-shell" id="metodologia" aria-labelledby="methodology-title">
           <div className="section-meta">
             <p className="eyebrow">Cómo trabajamos</p>
@@ -228,9 +234,9 @@ export default function Home() {
           </div>
           <div className="methodology-heading">
             <h2 id="methodology-title">
-              Una metodología diseñada
+              Elaboramos una Propuesta pedagógica
               <br />
-              alrededor de <strong>tu realidad.</strong>
+              a medida en <strong>48 horas.</strong>
             </h2>
           </div>
           <ol className="methodology-list">
@@ -244,78 +250,10 @@ export default function Home() {
           </ol>
         </section>
 
-        <section className="difference" aria-labelledby="difference-title">
-          <div className="difference-image" role="img" aria-label="Detalle abstracto de una mariposa en transformación" />
-          <div className="difference-copy section-shell">
-            <div className="section-meta">
-              <p className="eyebrow">Por qué TrainLab</p>
-              <p className="section-number">05</p>
-            </div>
-            <h2 id="difference-title">
-              Experiencia para
-              <br />
-              lo que <strong>viene.</strong>
-            </h2>
-            <div className="difference-points">
-              <article>
-                <h3>Diseñado con vos</h3>
-                <p>
-                  Construimos cada propuesta a partir de las necesidades, la
-                  cultura y los objetivos de tu organización.
-                </p>
-              </article>
-              <article>
-                <h3>Experiencia vigente</h3>
-                <p>
-                  Una red de expertos que combina trayectoria profesional,
-                  conocimiento técnico y una visión actual del cambio.
-                </p>
-              </article>
-              <article>
-                <h3>Aplicación e impacto</h3>
-                <p>
-                  Excelencia pedagógica, aplicabilidad inmediata y criterios
-                  claros para evaluar cada programa.
-                </p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section className="modalities section-shell" id="modalidades" aria-labelledby="modalities-title">
-          <div className="section-meta">
-            <p className="eyebrow">Modalidades</p>
-            <p className="section-number">06</p>
-          </div>
-          <div className="modalities-heading">
-            <h2 id="modalities-title">
-              Distintas formas de aprender.
-              <br />
-              Una misma <strong>exigencia.</strong>
-            </h2>
-            <p>
-              Elegimos la modalidad que mejor acompaña los objetivos, los
-              tiempos y la escala de cada organización.
-            </p>
-          </div>
-          <div className="modality-list">
-            {modalities.map((modality, index) => (
-              <details key={modality.title} name="modalidades">
-                <summary>
-                  <span className="modality-index">0{index + 1}</span>
-                  <span>{modality.title}</span>
-                  <span className="modality-icon" aria-hidden="true">+</span>
-                </summary>
-                <p>{modality.text}</p>
-              </details>
-            ))}
-          </div>
-        </section>
-
         <section className="council section-shell" id="consejo" aria-labelledby="council-title">
           <div className="section-meta section-meta-dark">
             <p className="eyebrow">Consejo Asesor y Académico</p>
-            <p className="section-number">07</p>
+            <p className="section-number">05</p>
           </div>
           <div className="council-heading">
             <h2 id="council-title">
@@ -357,6 +295,95 @@ export default function Home() {
                 MBA por Harvard y Doctor en Dirección de Empresas.
               </p>
             </article>
+            <article>
+              <div className="council-person-header">
+                <div className="portrait-frame portrait-jimena">
+                  <img src="/media/jimena-garcia-pinto.jpeg" alt="Jimena García Pinto" width="160" height="160" />
+                </div>
+                <div className="council-person-heading">
+                  <h3>Jimena García Pinto</h3>
+                  <p className="council-role">CEO TrainLab</p>
+                </div>
+              </div>
+              <p className="council-bio">
+                Magíster en Inteligencia Artificial, especialista en
+                tecnologías digitales y experta en e-Learning. Más de 15 años
+                de experiencia transformando organizaciones a través de
+                tecnología, educación y estrategia.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section className="difference" id="por-que" aria-labelledby="difference-title">
+          <div className="difference-image" role="img" aria-label="Detalle abstracto de una mariposa en transformación" />
+          <div className="difference-copy section-shell">
+            <div className="section-meta">
+              <p className="eyebrow">Por qué TrainLab</p>
+              <p className="section-number">06</p>
+            </div>
+            <h2 id="difference-title">
+              La IA cambió el mundo.
+              <br />
+              Tu equipo, <strong>¿está listo?</strong>
+            </h2>
+            <p className="difference-lede">
+              La resistencia a la IA no es técnica, es emocional. Los cambios
+              necesitan acompañamiento.
+            </p>
+            <div className="difference-points">
+              <article>
+                <h3>Diseñado con vos</h3>
+                <p>
+                  Construimos cada propuesta a partir de las necesidades, la
+                  cultura y los objetivos de tu organización.
+                </p>
+              </article>
+              <article>
+                <h3>Experiencia vigente</h3>
+                <p>
+                  Una red de expertos que combina trayectoria profesional,
+                  conocimiento técnico y una visión actual del cambio.
+                </p>
+              </article>
+              <article>
+                <h3>Aplicación e impacto</h3>
+                <p>
+                  Excelencia pedagógica, aplicabilidad inmediata y criterios
+                  claros para evaluar cada programa.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section className="modalities section-shell" id="modalidades" aria-labelledby="modalities-title">
+          <div className="section-meta">
+            <p className="eyebrow">Modalidades</p>
+            <p className="section-number">07</p>
+          </div>
+          <div className="modalities-heading">
+            <h2 id="modalities-title">
+              Distintas formas de aprender.
+              <br />
+              Una misma <strong>exigencia.</strong>
+            </h2>
+            <p>
+              Elegimos la modalidad que mejor acompaña los objetivos, los
+              tiempos y la escala de cada organización.
+            </p>
+          </div>
+          <div className="modality-list">
+            {modalities.map((modality, index) => (
+              <details key={modality.title} name="modalidades">
+                <summary>
+                  <span className="modality-index">0{index + 1}</span>
+                  <span>{modality.title}</span>
+                  <span className="modality-icon" aria-hidden="true">+</span>
+                </summary>
+                <p>{modality.text}</p>
+              </details>
+            ))}
           </div>
         </section>
 
@@ -387,7 +414,7 @@ export default function Home() {
         <section className="contact section-shell" id="contacto" aria-labelledby="contact-title">
           <div className="section-meta section-meta-dark">
             <p className="eyebrow">Contacto</p>
-            <p className="section-number">08</p>
+            <p className="section-number">09</p>
           </div>
           <div className="contact-layout">
             <div className="contact-intro">
