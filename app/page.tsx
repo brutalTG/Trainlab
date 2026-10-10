@@ -266,7 +266,7 @@ export default function Home() {
             <article>
               <div className="council-person-header">
                 <div className="portrait-frame portrait-federico">
-                  <img src="/media/federico-pinedo.jpeg" alt="Federico Pinedo" width="160" height="160" />
+                  <img src="/media/federico-pinedo.png" alt="Federico Pinedo" width="160" height="160" />
                 </div>
                 <div className="council-person-heading">
                   <h3>Federico Pinedo</h3>
@@ -282,7 +282,7 @@ export default function Home() {
             <article>
               <div className="council-person-header">
                 <div className="portrait-frame portrait-alejandro">
-                  <img src="/media/alejandro-marchionna.jpeg" alt="Alejandro Marchionna Faré" width="160" height="160" />
+                  <img src="/media/alejandro-marchionna.png" alt="Alejandro Marchionna Faré" width="160" height="160" />
                 </div>
                 <div className="council-person-heading">
                   <h3>Alejandro Marchionna Faré</h3>
@@ -298,7 +298,7 @@ export default function Home() {
             <article>
               <div className="council-person-header">
                 <div className="portrait-frame portrait-jimena">
-                  <img src="/media/jimena-garcia-pinto.jpeg" alt="Jimena García Pinto" width="160" height="160" />
+                  <img src="/media/jimena-garcia-pinto.png" alt="Jimena García Pinto" width="160" height="160" />
                 </div>
                 <div className="council-person-heading">
                   <h3>Jimena García Pinto</h3>
